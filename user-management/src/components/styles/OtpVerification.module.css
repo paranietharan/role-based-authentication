@@ -1,12 +1,21 @@
-.signUpForm {
+.OtpVerification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.OtpVerificationForm {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 60px); /* Adjust height if there's a top bar */
     width: 100%;
 }
 
-.signUpForm form {
+.OtpVerificationForm form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,16 +25,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.signUpForm input {
+.OtpVerificationForm input {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
 
-.signUpForm button {
+.OtpVerificationForm button {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -37,6 +46,6 @@
     transition: background-color 0.3s ease;
 }
 
-.signUpForm button:hover {
+.OtpVerificationForm button:hover {
     background-color: #45a049;
 }

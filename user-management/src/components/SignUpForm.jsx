@@ -1,46 +1,44 @@
 import { useState } from 'react';
-import styles from './styles/SignUpForm.module.css'
+import styles from './styles/SignUpForm.module.css';
 
-export default function SignUpForm() {
-    const [username, setUsername] = useState('');
+export default function SignUpForm({ onSignUpSuccess }) {
     const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log('Username:', username);
+        console.log('Name:', name);
+        console.log('Email:', email);
         console.log('Password:', password);
-        console.log('Name: ', name);
+
+        onSignUpSuccess();
     };
 
     return (
-        <div className={styles.SignUpForm}>
-            <div className={styles.loginForm}>
+        <div className={styles.signUpPageContainer}>
+            <div className={styles.signUpForm}>
                 <form onSubmit={handleSubmit}>
-                    <div className={styles.NameField}>
+                    <div className={styles.nameField}>
                         <input
                             name='name'
                             id="name"
                             type='text'
                             value={name}
-                            onChange={
-                                (e) => setName(e.target.value)
-                            }
+                            onChange={(e) => setName(e.target.value)}
                             placeholder="Enter your full name"
                             required
                         />
                     </div>
 
-                    <div className={styles.userNameField}>
+                    <div className={styles.emailField}>
                         <input
-                            name='username'
-                            id="username"
+                            name='email'
+                            id="email"
                             type='text'
-                            value={username}
-                            onChange={
-                                (e) => setUsername(e.target.value)
-                            }
-                            placeholder="Enter username"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="Enter email"
                             required
                         />
                     </div>
@@ -57,9 +55,9 @@ export default function SignUpForm() {
                         />
                     </div>
 
-                    <button type="submit">Login</button>
+                    <button type="submit">Sign Up</button>
                 </form>
             </div>
         </div>
-    )
+    );
 }

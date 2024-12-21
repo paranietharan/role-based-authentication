@@ -1,8 +1,14 @@
+import { useState } from 'react';
 import styles from './styles/Signup.module.css';
 import SignUpForm from '../components/SignUpForm';
+import OtpVerification from '../components/OtpVerification';
 
 export default function SignUpPage() {
+    const [isSignUpComplete, setIsSignUpComplete] = useState(false);
 
+    const handleSignUpSuccess = () => {
+        setIsSignUpComplete(true);
+    };
 
     return (
         <div className={styles.loginPageContainer}>
@@ -11,7 +17,11 @@ export default function SignUpPage() {
                 <button>Login</button>
             </div>
             
-            <SignUpForm />
+            {isSignUpComplete ? (
+                <OtpVerification />
+            ) : (
+                <SignUpForm onSignUpSuccess={handleSignUpSuccess} />
+            )}
         </div>
     )
 }
