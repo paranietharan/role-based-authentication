@@ -1,0 +1,35 @@
+.loginPageContainer{
+    background-color: #f2f2f2;
+}
+
+.topBar{
+    display: flex;
+    padding: 20px 0;
+    justify-content: right;
+    align-items: center;
+    padding: 25px;
+    border: 2px black solid;
+    background-color: #d9d9d9;
+}
+
+.topBar p{
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.topBar button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.topBar button:hover {
+    background-color: #45a049;
+}
+
