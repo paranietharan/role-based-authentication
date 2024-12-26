@@ -1,0 +1,41 @@
+.AdminSettings {
+    font-family: Arial, sans-serif;
+}
+
+.AdminSettingsContent {
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ChangePasswordForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.ChangePasswordForm label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.ChangePasswordForm input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ChangePasswordButton {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ChangePasswordButton:hover {
+    background-color: #0056b3;
+}
