@@ -13,7 +13,6 @@ const AppRoutes = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         {/* TODO: Authentication routes
-            forgot password
             2FA page
          */}
          <Route path="/" element={<ForgotPasswordPage />} />
