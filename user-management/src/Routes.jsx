@@ -10,6 +10,7 @@ const AppRoutes = () => {
   return (
     <Router>
       <Routes>
+        {/* Login and Forgot password routes */}
         <Route path="/" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
