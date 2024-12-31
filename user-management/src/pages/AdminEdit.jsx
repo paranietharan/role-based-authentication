@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styles/AdminEdit.module.css';
-import AdminTopNavBar from '../components/AdminTopNavBar';
+import AdminTopNavBar from '../components/utils/AdminTopNavBar';
 
 function AdminEditPage() {
     const [searchTerm, setSearchTerm] = useState('');

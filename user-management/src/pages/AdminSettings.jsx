@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styles/AdminSettings.module.css';
-import AdminTopNavBar from '../components/AdminTopNavBar';
+import AdminTopNavBar from '../components/utils/AdminTopNavBar';
 
 function AdminSettingsPage() {
     const [currentPassword, setCurrentPassword] = useState('');

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AdminTopNavBar from '../components/AdminTopNavBar';
+import AdminTopNavBar from '../components/utils/AdminTopNavBar';
 import styles from './styles/AdminAddPage.module.css';
 
 export default function AdminAddPage() {

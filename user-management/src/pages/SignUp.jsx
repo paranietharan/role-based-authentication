@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './styles/Signup.module.css';
-import SignUpForm from '../components/SignUpForm';
-import OtpVerification from '../components/OtpVerification';
+import SignUpForm from '../components/SignUp/SignUpForm';
+import OtpVerification from '../components/SignUp/OtpVerification';
 
 export default function SignUpPage() {
     const [isSignUpComplete, setIsSignUpComplete] = useState(false);
