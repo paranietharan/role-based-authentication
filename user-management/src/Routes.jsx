@@ -10,12 +10,9 @@ const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
-        {/* TODO: Authentication routes
-            2FA page
-         */}
-         <Route path="/" element={<ForgotPasswordPage />} />
+        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
 
         {/* admin routes */}
         <Route path="/admin-add" element={<AdminAddPage />} />
