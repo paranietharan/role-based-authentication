@@ -5,6 +5,9 @@ import AdminAddPage from "./pages/AdminAddEmployee";
 import AdminEditPage from "./pages/AdminEdit";
 import AdminSettingsPage from "./pages/AdminSettings";
 import ForgotPasswordPage from "./pages/ForgotPassword";
+import UserDetailsAdd from "./pages/UserDetailsAdd";
+import UserDetailsEdit from "./pages/UserDetailsEdit";
+import UserSettings from "./pages/UserSettings";
 
 const AppRoutes = () => {
   return (
@@ -21,11 +24,13 @@ const AppRoutes = () => {
         <Route path="/admin-settings" element={<AdminSettingsPage />} />
 
         {/* employee routes */}
-        {/* 
-        TODO: Add employee routes here
-        add details page
-        password change page
-         */}
+        <Route path="/user-add" element={<UserDetailsAdd />} />
+        <Route path="/user-edit" element={<UserDetailsEdit />} />
+        <Route path="/user-settings" element={<UserSettings />} />
+
+        {/*
+        * Plan the created user roles
+            * ADMIN, USER_UNVERIFIED, USER_VERIFIED */}
       </Routes>
     </Router>
   );

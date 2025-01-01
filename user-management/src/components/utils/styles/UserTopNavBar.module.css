@@ -1,0 +1,23 @@
+.AdminTopNavBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #9f9b9b;
+    padding: 10px 20px;
+    height: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.AdminTopNavBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.AdminTopNavBar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
